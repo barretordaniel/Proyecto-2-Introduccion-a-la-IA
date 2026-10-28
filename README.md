@@ -12,7 +12,7 @@ Motor de inferencia de propósito general con encadenamiento hacia adelante (*fo
 | `base_conocimiento.json` | Base de conocimiento externa: 65 reglas de Horn en 4 niveles de inferencia. |
 | `validar_kb.py` | Auditoría automática de la KB: forma de Horn, aciclicidad, alcanzabilidad, profundidad y alertas. |
 | `pruebas_equivalencia.py` | Pruebas de equivalencia entre ambos motores, robustez ante ciclos y control de profundidad. |
-| `Informe_Tecnico_Proyecto2.pdf` | Informe técnico: diseño de la KB, estrategias algorítmicas y casos clínicos con trazas paso a paso. |
+
 
 ## Uso
 
