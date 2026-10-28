@@ -1,0 +1,459 @@
+{
+  "reglas": [
+    {
+      "id": "R01",
+      "nivel": 1,
+      "antecedentes": ["Fiebre", "Escalofrios"],
+      "consecuente": "Cuadro_Febril",
+      "descripcion": "Fiebre con escalofríos configura un cuadro febril sistémico."
+    },
+    {
+      "id": "R02",
+      "nivel": 1,
+      "antecedentes": ["Dolor_Muscular", "Fatiga"],
+      "consecuente": "Malestar_General",
+      "descripcion": "Dolor muscular con fatiga constituye un malestar general."
+    },
+    {
+      "id": "R03",
+      "nivel": 1,
+      "antecedentes": ["Congestion_Nasal", "Estornudos"],
+      "consecuente": "Catarro_Nasal",
+      "descripcion": "Congestión nasal con estornudos indica catarro nasal."
+    },
+    {
+      "id": "R04",
+      "nivel": 1,
+      "antecedentes": ["Tos_Seca", "Dolor_Garganta"],
+      "consecuente": "Irritacion_Faringea",
+      "descripcion": "Tos seca con dolor de garganta indica irritación faríngea."
+    },
+    {
+      "id": "R05",
+      "nivel": 1,
+      "antecedentes": ["Dolor_Garganta", "Exudado_Amigdalino"],
+      "consecuente": "Faringitis_Exudativa",
+      "descripcion": "Dolor de garganta con exudado amigdalino define una faringitis exudativa."
+    },
+    {
+      "id": "R06",
+      "nivel": 1,
+      "antecedentes": ["Dificultad_Respiratoria", "Sibilancias"],
+      "consecuente": "Obstruccion_Bronquial",
+      "descripcion": "Dificultad respiratoria con sibilancias indica obstrucción bronquial."
+    },
+    {
+      "id": "R07",
+      "nivel": 1,
+      "antecedentes": ["Tos_Productiva", "Esputo_Purulento"],
+      "consecuente": "Expectoracion_Purulenta",
+      "descripcion": "Tos productiva con esputo purulento constituye expectoración purulenta."
+    },
+    {
+      "id": "R08",
+      "nivel": 1,
+      "antecedentes": ["Tos_Productiva", "Dolor_Pecho_Pleuritico"],
+      "consecuente": "Compromiso_Pleuropulmonar",
+      "descripcion": "Tos productiva con dolor pleurítico sugiere compromiso pleuropulmonar."
+    },
+    {
+      "id": "R09",
+      "nivel": 1,
+      "antecedentes": ["Dolor_Detras_Ojos", "Dolor_Articular_Intenso"],
+      "consecuente": "Dolor_Osteomuscular_Intenso",
+      "descripcion": "Dolor retroocular con artralgia intensa es un dolor osteomuscular intenso, típico de las arbovirosis."
+    },
+    {
+      "id": "R10",
+      "nivel": 1,
+      "antecedentes": ["Vomito_Persistente", "Dolor_Abdominal_Intenso"],
+      "consecuente": "Signos_Alarma_Digestivos",
+      "descripcion": "Vómito persistente con dolor abdominal intenso son signos de alarma digestivos."
+    },
+    {
+      "id": "R11",
+      "nivel": 1,
+      "antecedentes": ["Fiebre", "Dolor_Cabeza"],
+      "consecuente": "Cefalea_Febril",
+      "descripcion": "Fiebre con cefalea configura una cefalea febril."
+    },
+    {
+      "id": "R12",
+      "nivel": 2,
+      "antecedentes": ["Cuadro_Febril", "Malestar_General"],
+      "consecuente": "Sindrome_Gripal",
+      "descripcion": "Cuadro febril con malestar general conforma un síndrome gripal."
+    },
+    {
+      "id": "R13",
+      "nivel": 2,
+      "antecedentes": ["Catarro_Nasal", "Irritacion_Faringea"],
+      "consecuente": "Sindrome_Catarral",
+      "descripcion": "Catarro nasal con irritación faríngea conforma un síndrome catarral."
+    },
+    {
+      "id": "R14",
+      "nivel": 2,
+      "antecedentes": ["Cuadro_Febril", "Faringitis_Exudativa"],
+      "consecuente": "Sindrome_Faringoamigdalar",
+      "descripcion": "Cuadro febril con faringitis exudativa conforma un síndrome faringoamigdalar."
+    },
+    {
+      "id": "R15",
+      "nivel": 2,
+      "antecedentes": ["Cuadro_Febril", "Expectoracion_Purulenta"],
+      "consecuente": "Sindrome_Infeccioso_Respiratorio_Bajo",
+      "descripcion": "Cuadro febril con expectoración purulenta conforma una infección respiratoria baja."
+    },
+    {
+      "id": "R16",
+      "nivel": 2,
+      "antecedentes": ["Cuadro_Febril", "Compromiso_Pleuropulmonar"],
+      "consecuente": "Sindrome_Infeccioso_Respiratorio_Bajo",
+      "descripcion": "Cuadro febril con compromiso pleuropulmonar conforma una infección respiratoria baja (vía alterna)."
+    },
+    {
+      "id": "R17",
+      "nivel": 2,
+      "antecedentes": ["Obstruccion_Bronquial", "Tos_Seca"],
+      "consecuente": "Sindrome_Obstructivo",
+      "descripcion": "Obstrucción bronquial con tos seca conforma un síndrome obstructivo."
+    },
+    {
+      "id": "R18",
+      "nivel": 2,
+      "antecedentes": ["Obstruccion_Bronquial", "Tos_Productiva"],
+      "consecuente": "Sindrome_Obstructivo",
+      "descripcion": "Obstrucción bronquial con tos productiva conforma un síndrome obstructivo (vía alterna)."
+    },
+    {
+      "id": "R19",
+      "nivel": 2,
+      "antecedentes": ["Dolor_Osteomuscular_Intenso", "Cefalea_Febril"],
+      "consecuente": "Sindrome_Febril_Tropical",
+      "descripcion": "Dolor osteomuscular intenso con cefalea febril conforma un síndrome febril tropical."
+    },
+    {
+      "id": "R20",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Gripal", "Inicio_Brusco"],
+      "consecuente": "Gripe",
+      "descripcion": "Síndrome gripal de inicio brusco: gripe (influenza)."
+    },
+    {
+      "id": "R21",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Gripal", "Perdida_Olfato"],
+      "consecuente": "COVID19",
+      "descripcion": "Síndrome gripal con pérdida del olfato: COVID-19."
+    },
+    {
+      "id": "R22",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Gripal", "Contacto_Caso_COVID"],
+      "consecuente": "COVID19",
+      "descripcion": "Síndrome gripal con contacto con un caso de COVID-19: COVID-19 (vía alterna)."
+    },
+    {
+      "id": "R23",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Catarral", "Inicio_Gradual"],
+      "consecuente": "Resfriado_Comun",
+      "descripcion": "Síndrome catarral de inicio gradual: resfriado común."
+    },
+    {
+      "id": "R24",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Faringoamigdalar", "Ganglios_Cervicales_Inflamados"],
+      "consecuente": "Faringoamigdalitis_Estreptococica",
+      "descripcion": "Síndrome faringoamigdalar con ganglios cervicales inflamados: faringoamigdalitis estreptocócica."
+    },
+    {
+      "id": "R25",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Faringoamigdalar", "Congestion_Nasal"],
+      "consecuente": "Faringitis_Viral",
+      "descripcion": "Síndrome faringoamigdalar con congestión nasal: faringitis viral."
+    },
+    {
+      "id": "R26",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Infeccioso_Respiratorio_Bajo", "Dificultad_Respiratoria"],
+      "consecuente": "Neumonia",
+      "descripcion": "Infección respiratoria baja con dificultad respiratoria: neumonía."
+    },
+    {
+      "id": "R27",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Infeccioso_Respiratorio_Bajo", "Sibilancias"],
+      "consecuente": "Bronquitis_Aguda",
+      "descripcion": "Infección respiratoria baja con sibilancias: bronquitis aguda."
+    },
+    {
+      "id": "R28",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Obstructivo", "Antecedente_Asma"],
+      "consecuente": "Asma_Exacerbada",
+      "descripcion": "Síndrome obstructivo con antecedente de asma: exacerbación asmática."
+    },
+    {
+      "id": "R29",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Obstructivo", "Antecedente_Tabaquismo"],
+      "consecuente": "EPOC_Exacerbada",
+      "descripcion": "Síndrome obstructivo con antecedente de tabaquismo: exacerbación de EPOC."
+    },
+    {
+      "id": "R30",
+      "nivel": 3,
+      "antecedentes": ["Sindrome_Febril_Tropical", "Zona_Endemica_Dengue"],
+      "consecuente": "Dengue",
+      "descripcion": "Síndrome febril tropical en zona endémica: dengue."
+    },
+    {
+      "id": "R31",
+      "nivel": 4,
+      "antecedentes": ["COVID19", "Dificultad_Respiratoria"],
+      "consecuente": "COVID19_Moderado",
+      "descripcion": "COVID-19 con dificultad respiratoria: COVID-19 moderado."
+    },
+    {
+      "id": "R32",
+      "nivel": 4,
+      "antecedentes": ["COVID19", "Grupo_Riesgo"],
+      "consecuente": "Indicacion_Antiviral_COVID",
+      "descripcion": "COVID-19 en grupo de riesgo: se indica evaluar tratamiento antiviral."
+    },
+    {
+      "id": "R33",
+      "nivel": 4,
+      "antecedentes": ["COVID19_Moderado", "Saturacion_Oxigeno_Baja"],
+      "consecuente": "Alerta_COVID_Grave",
+      "descripcion": "COVID-19 moderado con saturación de oxígeno baja: alerta de COVID-19 grave."
+    },
+    {
+      "id": "R34",
+      "nivel": 4,
+      "antecedentes": ["COVID19", "Confusion_Mental"],
+      "consecuente": "Alerta_COVID_Grave",
+      "descripcion": "COVID-19 con confusión mental: alerta de COVID-19 grave."
+    },
+    {
+      "id": "R35",
+      "nivel": 4,
+      "antecedentes": ["Gripe", "Grupo_Riesgo"],
+      "consecuente": "Indicacion_Antiviral_Influenza",
+      "descripcion": "Gripe en grupo de riesgo: se indica evaluar antiviral para influenza."
+    },
+    {
+      "id": "R36",
+      "nivel": 4,
+      "antecedentes": ["Gripe", "Dificultad_Respiratoria"],
+      "consecuente": "Alerta_Gripe_Complicada",
+      "descripcion": "Gripe con dificultad respiratoria: alerta de gripe complicada."
+    },
+    {
+      "id": "R37",
+      "nivel": 4,
+      "antecedentes": ["Gripe", "Saturacion_Oxigeno_Baja"],
+      "consecuente": "Alerta_Gripe_Complicada",
+      "descripcion": "Gripe con saturación de oxígeno baja: alerta de gripe complicada."
+    },
+    {
+      "id": "R38",
+      "nivel": 4,
+      "antecedentes": ["Resfriado_Comun", "Dolor_Cabeza"],
+      "consecuente": "Indicacion_Analgesico",
+      "descripcion": "Resfriado común con cefalea: se indica analgésico."
+    },
+    {
+      "id": "R39",
+      "nivel": 4,
+      "antecedentes": ["Resfriado_Comun", "Dificultad_Respiratoria"],
+      "consecuente": "Alerta_Reevaluacion_Clinica",
+      "descripcion": "Resfriado común con dificultad respiratoria: alerta de reevaluación clínica."
+    },
+    {
+      "id": "R40",
+      "nivel": 4,
+      "antecedentes": ["Faringoamigdalitis_Estreptococica", "Erupcion_Cutanea"],
+      "consecuente": "Escarlatina",
+      "descripcion": "Faringoamigdalitis estreptocócica con erupción cutánea: escarlatina."
+    },
+    {
+      "id": "R41",
+      "nivel": 4,
+      "antecedentes": ["Faringoamigdalitis_Estreptococica", "Tolera_Penicilina"],
+      "consecuente": "Indicacion_Penicilina",
+      "descripcion": "Faringoamigdalitis estreptocócica con tolerancia a penicilina: se indica penicilina."
+    },
+    {
+      "id": "R42",
+      "nivel": 4,
+      "antecedentes": ["Faringoamigdalitis_Estreptococica", "Alergia_Penicilina"],
+      "consecuente": "Indicacion_Antibiotico_Alternativo",
+      "descripcion": "Faringoamigdalitis estreptocócica con alergia a penicilina: se indica antibiótico alternativo."
+    },
+    {
+      "id": "R43",
+      "nivel": 4,
+      "antecedentes": ["Faringoamigdalitis_Estreptococica", "Dificultad_Respiratoria"],
+      "consecuente": "Alerta_Obstruccion_Via_Aerea",
+      "descripcion": "Faringoamigdalitis estreptocócica con dificultad respiratoria: alerta de obstrucción de la vía aérea."
+    },
+    {
+      "id": "R44",
+      "nivel": 4,
+      "antecedentes": ["Faringitis_Viral", "Dolor_Cabeza"],
+      "consecuente": "Indicacion_Analgesico",
+      "descripcion": "Faringitis viral con cefalea: se indica analgésico."
+    },
+    {
+      "id": "R45",
+      "nivel": 4,
+      "antecedentes": ["Faringitis_Viral", "Dificultad_Respiratoria"],
+      "consecuente": "Alerta_Reevaluacion_Clinica",
+      "descripcion": "Faringitis viral con dificultad respiratoria: alerta de reevaluación clínica."
+    },
+    {
+      "id": "R46",
+      "nivel": 4,
+      "antecedentes": ["Neumonia", "Esputo_Purulento"],
+      "consecuente": "Neumonia_Bacteriana",
+      "descripcion": "Neumonía con esputo purulento: neumonía bacteriana."
+    },
+    {
+      "id": "R47",
+      "nivel": 4,
+      "antecedentes": ["Neumonia", "Contacto_Caso_COVID"],
+      "consecuente": "Neumonia_Viral_Probable",
+      "descripcion": "Neumonía con contacto con un caso de COVID-19: neumonía viral probable."
+    },
+    {
+      "id": "R48",
+      "nivel": 4,
+      "antecedentes": ["Neumonia", "Grupo_Riesgo"],
+      "consecuente": "Indicacion_Hospitalizacion",
+      "descripcion": "Neumonía en grupo de riesgo: se indica hospitalización."
+    },
+    {
+      "id": "R49",
+      "nivel": 4,
+      "antecedentes": ["Neumonia_Bacteriana", "Saturacion_Oxigeno_Baja"],
+      "consecuente": "Alerta_Neumonia_Grave",
+      "descripcion": "Neumonía bacteriana con saturación de oxígeno baja: alerta de neumonía grave."
+    },
+    {
+      "id": "R50",
+      "nivel": 4,
+      "antecedentes": ["Neumonia", "Confusion_Mental"],
+      "consecuente": "Alerta_Neumonia_Grave",
+      "descripcion": "Neumonía con confusión mental: alerta de neumonía grave."
+    },
+    {
+      "id": "R51",
+      "nivel": 4,
+      "antecedentes": ["Bronquitis_Aguda", "Esputo_Purulento"],
+      "consecuente": "Bronquitis_Sobreinfeccion_Bacteriana",
+      "descripcion": "Bronquitis aguda con esputo purulento: sobreinfección bacteriana."
+    },
+    {
+      "id": "R52",
+      "nivel": 4,
+      "antecedentes": ["Bronquitis_Aguda", "Antecedente_Tabaquismo"],
+      "consecuente": "Indicacion_Cesacion_Tabaquica",
+      "descripcion": "Bronquitis aguda en fumador: se indica cesación tabáquica."
+    },
+    {
+      "id": "R53",
+      "nivel": 4,
+      "antecedentes": ["Bronquitis_Aguda", "Dificultad_Respiratoria"],
+      "consecuente": "Alerta_Reevaluacion_Clinica",
+      "descripcion": "Bronquitis aguda con dificultad respiratoria: alerta de reevaluación clínica."
+    },
+    {
+      "id": "R54",
+      "nivel": 4,
+      "antecedentes": ["Asma_Exacerbada", "Fiebre"],
+      "consecuente": "Asma_Desencadenada_Por_Infeccion",
+      "descripcion": "Exacerbación asmática con fiebre: crisis desencadenada por infección."
+    },
+    {
+      "id": "R55",
+      "nivel": 4,
+      "antecedentes": ["Asma_Exacerbada", "Saturacion_Oxigeno_Baja"],
+      "consecuente": "Alerta_Crisis_Asmatica_Grave",
+      "descripcion": "Exacerbación asmática con saturación baja: alerta de crisis asmática grave."
+    },
+    {
+      "id": "R56",
+      "nivel": 4,
+      "antecedentes": ["Asma_Exacerbada", "Confusion_Mental"],
+      "consecuente": "Alerta_Crisis_Asmatica_Grave",
+      "descripcion": "Exacerbación asmática con confusión mental: alerta de crisis asmática grave."
+    },
+    {
+      "id": "R57",
+      "nivel": 4,
+      "antecedentes": ["EPOC_Exacerbada", "Esputo_Purulento"],
+      "consecuente": "Indicacion_Antibiotico_EPOC",
+      "descripcion": "Exacerbación de EPOC con esputo purulento: se indica antibiótico."
+    },
+    {
+      "id": "R58",
+      "nivel": 4,
+      "antecedentes": ["EPOC_Exacerbada", "Saturacion_Oxigeno_Baja"],
+      "consecuente": "Alerta_Insuficiencia_Respiratoria",
+      "descripcion": "Exacerbación de EPOC con saturación baja: alerta de insuficiencia respiratoria."
+    },
+    {
+      "id": "R59",
+      "nivel": 4,
+      "antecedentes": ["EPOC_Exacerbada", "Confusion_Mental"],
+      "consecuente": "Alerta_Insuficiencia_Respiratoria",
+      "descripcion": "Exacerbación de EPOC con confusión mental: alerta de insuficiencia respiratoria."
+    },
+    {
+      "id": "R60",
+      "nivel": 4,
+      "antecedentes": ["Dengue", "Signos_Alarma_Digestivos"],
+      "consecuente": "Dengue_Con_Signos_Alarma",
+      "descripcion": "Dengue con signos de alarma digestivos: dengue con signos de alarma."
+    },
+    {
+      "id": "R61",
+      "nivel": 4,
+      "antecedentes": ["Dengue", "Sangrado_Mucoso"],
+      "consecuente": "Dengue_Con_Signos_Alarma",
+      "descripcion": "Dengue con sangrado de mucosas: dengue con signos de alarma."
+    },
+    {
+      "id": "R62",
+      "nivel": 4,
+      "antecedentes": ["Dengue_Con_Signos_Alarma", "Hipotension"],
+      "consecuente": "Alerta_Dengue_Grave",
+      "descripcion": "Dengue con signos de alarma e hipotensión: alerta de dengue grave."
+    },
+    {
+      "id": "R63",
+      "nivel": 4,
+      "antecedentes": ["Dengue", "Tolera_Via_Oral"],
+      "consecuente": "Indicacion_Hidratacion_Oral",
+      "descripcion": "Dengue con tolerancia a la vía oral: se indica hidratación oral ambulatoria."
+    },
+    {
+      "id": "R64",
+      "nivel": 4,
+      "antecedentes": ["Dengue_Con_Signos_Alarma", "Vomito_Persistente"],
+      "consecuente": "Indicacion_Hidratacion_Intravenosa",
+      "descripcion": "Dengue con signos de alarma y vómito persistente: se indica hidratación intravenosa."
+    },
+    {
+      "id": "R65",
+      "nivel": 4,
+      "antecedentes": ["Dengue", "Erupcion_Cutanea"],
+      "consecuente": "Dengue_Con_Exantema",
+      "descripcion": "Dengue con erupción cutánea: dengue con exantema."
+    }
+  ]
+}
