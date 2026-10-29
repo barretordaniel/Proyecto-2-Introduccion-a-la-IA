@@ -43,7 +43,6 @@ La lógica es **monótona**: un hecho deducido nunca se retira. Lo que no se pue
 ├── base_conocimiento.json         # KB externa con 65 reglas
 ├── validar_kb.py                  # auditoría automática de la KB
 ├── pruebas_equivalencia.py        # pruebas de ambos motores
-├── Informe_Tecnico_Proyecto2.pdf  # informe técnico
 └── README.md
 ```
 
